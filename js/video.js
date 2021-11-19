@@ -47,12 +47,13 @@ document.querySelector("#slider").addEventListener("click",function(){
 	document.querySelector("#volume").innerHTML = this.value + "%";
 
 });
+document.querySelector("#orig").addEventListener("click",function(){
+	video.classList.remove("oldSchool");
+});
 document.querySelector("#vintage").addEventListener("click",function(){
 	video.classList.add("oldSchool");
 });
-document.querySelector("#mute").addEventListener("click",function(){
-	video.classList.remove("oldSchool");
-});
+
 
 
 // document.querySelector("#play").addEventListener("click", function() {
